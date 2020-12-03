@@ -1,12 +1,22 @@
-import { StatusBar } from 'expo-status-bar';
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+import React, { useState, useEffect } from 'react';
+import { StyleSheet, Text, View, Dimensions} from 'react-native';
+import Bird from './components/Bird';
 
 export default function App() {
+  const screenWidth = Dimensions.get("screen").width
+  const screenHeight = Dimensions.get("screen").height
+  const birdLeft = screenWidth / 2
+  const [BirdBottom, setBirdBottom] = useState(screenHeight/2) 
+
+  //start bird falling
+  useEffect(() => {
+    
+  })
+
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
+      <Bird />
     </View>
   );
 }
