@@ -12,8 +12,7 @@ const Obstacles = ({obstaclesLeft, obstacleWidth, obstacleHeight, gap}) => {
         height: obstacleHeight,
         left: obstaclesLeft,
         bottom: 0 + obstacleHeight + gap,
-      }}
-      />
+      }}/>
       <View style = {{
         position: 'absolute',
         backgroundColor: 'green',
@@ -21,8 +20,7 @@ const Obstacles = ({obstaclesLeft, obstacleWidth, obstacleHeight, gap}) => {
         height: obstacleHeight,
         left: obstaclesLeft,
         bottom: 0,
-      }}
-      />
+      }}/>
     </>
   )
 }
